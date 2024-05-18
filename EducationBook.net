@@ -1,0 +1,254 @@
+<!html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Education Book Browser</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-fpAABmzu8tRbcYoEy4P0INl9JUGAQdXwOsFxMKK9oYf24VPBAPpRb7iIzARuJyLmYzgo0S4LsmGH8wz3VUn52A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <h1>Education Book Browser</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bookmarks</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="address-bar">
+            <input type="text" id="url-input" placeholder="Enter URL">
+            <button onclick="navigate()">Go</button>
+        </div>
+        <div class="tabs" id="tabs">
+            <!-- Tabs will be dynamically generated -->
+        </div>
+        <div class="browser-content" id="browser-content">
+            <!-- Website content will be displayed here -->
+        </div>
+    </main>
+    <aside>
+        <div class="bookmarks" id="bookmarks">
+            <!-- Bookmarks will be dynamically generated -->
+        </div>
+        <div class="educational-websites">
+            <h2>Educational Websites</h2>
+            <ul>
+                <li><a href="#">Khan Academy</a></li>
+                <li><a href="#">Coursera</a></li>
+                <li><a href="#">TED-Ed</a></li>
+            </ul>
+        </div>
+        <div class="gaming">
+            <h2>Play Games</h2>
+            <p>Play web-based games here.</p>
+        </div>
+    </aside>
+    <footer>
+        <p>&copy; 2024 Education Book Browser. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+}
+
+.address-bar {
+    margin: 20px;
+}
+
+.address-bar input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+.address-bar button {
+    padding: 8px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs {
+    margin: 20px;
+}
+
+.browser-content {
+    flex-grow: 1;
+    margin: 20px;
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
+
+aside {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.bookmarks ul {
+    list-style: none;
+}
+
+.bookmarks ul li {
+    margin-bottom: 10px;
+}
+
+.bookmarks ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.educational-websites ul {
+    list-style: none;
+}
+
+.educational-websites ul li {
+    margin-bottom: 10px;
+}
+
+.educational-websites ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.gaming {
+    margin-top: 20px;
+}
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+main {
+    display: flex;
+}
+
+.address-bar {
+    margin: 20px;
+}
+
+.address-bar input[type="text"] {
+    padding: 8px;
+    width: 300px;
+}
+
+.address-bar button {
+    padding: 8px 15px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.tabs {
+    margin: 20px;
+}
+
+.browser-content {
+    flex-grow: 1;
+    margin: 20px;
+    border: 1px solid #ccc;
+    min-height: 400px;
+}
+
+aside {
+    width: 250px;
+    background-color: #f1f1f1;
+    padding: 20px;
+}
+
+.bookmarks ul {
+    list-style: none;
+}
+
+.bookmarks ul li {
+    margin-bottom: 10px;
+}
+
+.bookmarks ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.educational-websites ul {
+    list-style: none;
+}
+
+.educational-websites ul li {
+    margin-bottom: 10px;
+}
+
+.educational-websites ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.gaming {
+    margin-top: 20px;
+}
